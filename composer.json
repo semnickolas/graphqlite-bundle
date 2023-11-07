@@ -10,20 +10,33 @@
   "type" : "symfony-bundle",
   "license" : "MIT",
   "authors" : [{
-    "name" : "David Négrier",
-    "email" : "d.negrier@thecodingmachine.com",
-    "homepage" : "http://mouf-php.com"
+    "name" : "Mykola Semenda",
+    "email" : "semnickolas@gmail.com"
   }
+  ],
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "semnickolas/graphqlite",
+        "version": "1.0",
+        "source": {
+          "url": "https://github.com/semnickolas/graphqlite.git",
+          "type": "git",
+          "reference": "origin/dependency-update"
+        }
+      }
+    }
   ],
   "require" : {
     "php" : ">=8.1",
     "ext-json": "*",
-    "thecodingmachine/graphqlite" : "^6.0",
+    "semnickolas/graphqlite" : "1.0",
     "thecodingmachine/graphqlite-symfony-validator-bridge" : "^6.0",
     "symfony/framework-bundle": "^6",
     "symfony/validator": "^6",
     "symfony/translation": "^6",
-    "doctrine/annotations": "^1.13 || ^2.0.1",
+    "doctrine/annotations": ">=2.0",
     "symfony/psr-http-message-bridge": "^2.0",
     "nyholm/psr7": "^1.1",
     "laminas/laminas-diactoros": "^2.2.2",
